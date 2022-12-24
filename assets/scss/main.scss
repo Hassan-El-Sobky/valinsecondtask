@@ -1,0 +1,789 @@
+// @use "_font.scsss";
+button{
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+ 
+    
+ }
+.headerSection{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+     background-image: url('../images/backgrounds/Group\ 70.png');
+    background-size:cover;
+    // background-attachment: fixed;
+    background-repeat: no-repeat;
+     background-position: 0% 65%;
+    @media (max-width:900px) {
+        // background-image: url('../images/backgrounds/background\ .png');
+        // background-size:cover;
+        // background-position: 0% 0%;
+        background-position: 14%;
+    }
+  
+    nav{
+        a{
+            text-decoration: none;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+        .transLang{
+               display: flex;
+               align-items: center;
+            .lang{
+                font-weight: 500;
+                margin-inline-end:15px;
+            }
+        }
+        
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .buttonMenu{
+        //  font-family: 'metropolisregular';
+     
+        .transLang{
+            background-color: transparent;
+            border: none;
+            color: #ffffff;
+            font-weight: 500;
+            .lang{
+                margin-top: 5px;
+            }
+        }
+        &-login{
+         
+            background: #FFFFFF;
+            color: #23D4CE;
+            
+        }
+        &-signup{
+            background: #23D4CE;
+            color: #FFFFFF;
+                }
+    }
+  .mobile{
+    text-align: end;
+    @media (max-width:900px) {
+        text-align: center;
+       }
+  }
+    
+  
+}
+.headerContent{
+    margin-top: 120px;
+    color: #FFFFFF;
+    @media (max-width:900px) {
+     margin-top: 0px;
+    }
+    &-message{
+        font-weight: 700;
+        line-height: 62px;
+        font-weight: 700;
+        font-size: 48.83px;
+        font-feature-settings: 'salt' on, 'liga' off;
+        @media (max-width:900px) {
+            font-size: 25px;
+           }
+        &-mark{
+            color: rgba(35, 212, 206, 1);
+        }
+    }
+    &-paragragh{
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 34px;
+        text-align: justify;
+        @media (max-width:900px) {
+            font-size: 20px;
+            text-align: start;
+           }
+    }
+    &-getStarted{
+        background-color: #23D4CE;
+        color: #FFFFFF;
+        padding: 10px 20px;
+    }
+}
+
+.features{
+    &-Wrapper{
+        padding: 20px;
+       
+        min-height: 323px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      &:hover{
+        cursor: pointer;
+        background-color: rgba(80, 217, 215, 0.2);
+      }
+    }
+}
+.navbar>.container{
+    align-items: baseline !important;
+}
+.sectionName{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 20px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top:45px;
+        width: 60px;
+        height: 3px;
+        background-color: #23D4CE;
+    }
+}
+
+.testimonials{
+    &-message{
+        font-size: 24px;
+         font-weight: 400;
+    }
+
+    &-reviews{
+        @media (max-width:1400px) {
+             display: none;
+        }
+        position: relative;
+        .person1{
+            position: absolute;
+            top: 120px;
+            left: 180px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+
+        .person2{
+            position: absolute;
+            top: 410px;
+            left: 280px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+
+        .person3{
+            position: absolute;
+            top: 270px;
+            left: 560px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+
+        .person4{
+            position: absolute;
+            top: 110px;
+            left: 750px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+        .person5{
+            position: absolute;
+            top: 250px;
+            left: 990px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+
+        .person6{
+            position: absolute;
+            top: 470px;
+            left: 1090px;
+            cursor: pointer;
+            .tooltip {
+                background: #ffffff;
+                bottom: 100%;
+                display: block;
+                left: -100px;
+                border-radius: 30px;
+                border: 1px solid #C4C4C4;
+                 width: 280px;
+                 top:10px;
+                // margin-bottom: 15px;
+                opacity: 0;
+                padding: 20px;
+                pointer-events: none;
+                position: relative;
+             
+                -webkit-transform: translateY(10px);
+                  -moz-transform: translateY(10px);
+                  -ms-transform: translateY(10px);
+                   -o-transform: translateY(10px);
+                    transform: translateY(10px);
+                -webkit-transition: all .25s ease-out;
+                  -moz-transition: all .25s ease-out;
+                  -ms-transition: all .25s ease-out;
+                   -o-transition: all .25s ease-out;
+                    transition: all .25s ease-out;
+                -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                  -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                   -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+                    &-name{
+                        font-size: 24px;
+                    }
+                    &-message{
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                    }
+                }
+                
+               
+                 .tooltip:before {
+                bottom: -20px;
+                content: " ";
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                }
+                
+                /* CSS Triangles - see Trevor's post */
+                 .tooltip:after {
+                background-color: #ffffff ;
+                 border-left: 1px solid #C4C4C4;
+                 border-top: 1px solid #C4C4C4;
+                bottom: -10px;
+                content: " ";
+                height: 0;
+                left: 50%;
+                top: -10px;
+                margin-left: -13px;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                }
+                
+                &:hover .tooltip {
+                opacity: 1;
+                pointer-events: auto;
+                -webkit-transform: translateY(0px);
+                  -moz-transform: translateY(0px);
+                  -ms-transform: translateY(0px);
+                   -o-transform: translateY(0px);
+                    transform: translateY(0px);
+                }
+                
+                /* IE can just show/hide with no transition */
+               .tooltip {
+                display: none;
+                }
+                
+                &:hover .tooltip {
+                display: block;
+                }
+        }
+    }
+    .testimonial-section {
+        @media (min-width:1400px) {
+            display: none;
+       }
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .testimonial-section h1 {
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      
+      .testimonial-pic img {
+        width: 100px;
+        filter: grayscale(1);
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      .testimonial-pic img.active {
+        filter: grayscale(0);
+        border-radius: 50%;
+      }
+      
+      .testimonial .content {
+        display: none;
+      }
+      
+      .testimonial .content.active {
+        display: block;
+      }
+      
+      .testimonial .content p:nth-child(2) {
+        font-weight: bold;
+      }
+      cursor: pointer;
+      .tooltip {
+          background: #ffffff;
+          bottom: 100%;
+          display: block;
+       
+          border-radius: 30px;
+          border: 1px solid #C4C4C4;
+          text-align: center;
+           top:10px;
+          // margin-bottom: 15px;
+          opacity: 1;
+          padding: 20px;
+  
+       
+          -webkit-transform: translateY(10px);
+            -moz-transform: translateY(10px);
+            -ms-transform: translateY(10px);
+             -o-transform: translateY(10px);
+              transform: translateY(10px);
+          -webkit-transition: all .25s ease-out;
+            -moz-transition: all .25s ease-out;
+            -ms-transition: all .25s ease-out;
+             -o-transition: all .25s ease-out;
+              transition: all .25s ease-out;
+          -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+            -ms-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+             -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+              box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+              &-name{
+                  font-size: 24px;
+              }
+              &-message{
+                  font-size: 16px;
+                  line-height: 20px;
+                  font-weight: 500;
+              }
+          }
+}
