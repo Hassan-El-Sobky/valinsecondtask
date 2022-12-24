@@ -21,7 +21,12 @@ button{
         // background-position: 0% 0%;
         background-position: 14%;
     }
-  
+    #particles-js{
+     
+      position: absolute;
+     
+    }
+   
     nav{
         a{
             text-decoration: none;
@@ -65,7 +70,7 @@ button{
     }
   .mobile{
     text-align: end;
-    @media (max-width:900px) {
+    @media (max-width:1000px) {
         text-align: center;
        }
   }

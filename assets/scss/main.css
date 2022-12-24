@@ -18,6 +18,9 @@ button {
     background-position: 14%;
   }
 }
+.headerSection #particles-js {
+  position: absolute;
+}
 .headerSection nav {
   border-bottom: 1px solid #CCCCCC;
 }
@@ -55,7 +58,7 @@ button {
 .headerSection .mobile {
   text-align: end;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .headerSection .mobile {
     text-align: center;
   }
